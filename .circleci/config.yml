@@ -7,10 +7,10 @@ jobs:
       - checkout
       - run:
           name: Install Dependencies
-          command: $(pwd)/pctl setup
+          command: bash pctl setup
       - run:
           name: Unit Tests
-          command: ./pctl tests
+          command: bash pctl tests
       - run:
           name: Linter
-          command: ./pctl linter
+          command: bash pctl linter

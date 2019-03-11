@@ -8,12 +8,12 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
-            bash pctl setup
+            pctl setup
       - run:
           name: Unit Tests
           command: |
-            bash pctl tests
+            pctl tests
       - run:
           name: Linter
           command: |
-            bash pctl linter
+            pctl linter

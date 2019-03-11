@@ -31,7 +31,7 @@ run() {
 }
 
 
-run-dev(){
+rundev(){
 inotifywait -r -q -m -e close_write --format %e lua spec | while read -r ; do
 busted
 done

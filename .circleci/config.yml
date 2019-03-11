@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Install Dependencies
-          command: pctl setup
+          command: $(pwd)/pctl setup
       - run:
           name: Unit Tests
           command: ./pctl tests
